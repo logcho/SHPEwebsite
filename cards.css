@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Fonts provided by SHPE National */
+
+/* Light Font */
+@font-face {
+     font-family: UniversLdStdLight;
+     src: url(Fonts/Univers-LT-Std-47-Light-Condensed_46333.ttf);
+}
+
+/* Regular Font */
+@font-face {
+     font-family: UniversLdStd;
+     src: url(Fonts/Univers-LT-Std-57-Condensed_46340.ttf);
+}
+
+/* Bold Font */
+@font-face {
+     font-family: UniversLdStdBold;
+     src: url(Fonts/Univers-LT-Std-67-Bold-Condensed_46347.ttf);
+}
+
+.cards {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-family: UniversLdStdLight;
+}
+
+.card{
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+.card-image{
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: #eeeeee;
+}
+
+.card-content{
+    display: none;
+    overflow: hidden;
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 30px;
+    background-color: #f3f3f3;
+}
+
+.card-content > p:first-of-type{
+    margin-top: 0;
+}
+
+.card-content > p:last-of-type{
+    margin-bottom: 0;
+}
+
+
+.card-info{
+    padding: 15px;
+    display: flex;
+    background: #eeeeee;
+    justify-content: space-between;
+    border-bottom: 2px solid #ccc;
+}
+
+.expand{
+    background-color: rgba(21, 8, 59, 0.507);
+    cursor: pointer;
+    outline: none;
+    margin: 0%;
+    margin-bottom: 20px;
+    font-size: 40px;
+    /* position:absolute; */
+}
+ 
+.expand:hover{
+    background-color: rgba(185, 192, 253, 0.507) ;
+}
+

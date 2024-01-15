@@ -1,0 +1,569 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Fonts provided by SHPE National */
+
+/* Light Font */
+@font-face {
+     font-family: UniversLdStdLight;
+     src: url(Fonts/Univers-LT-Std-47-Light-Condensed_46333.ttf);
+}
+
+/* Regular Font */
+@font-face {
+     font-family: UniversLdStd;
+     src: url(Fonts/Univers-LT-Std-57-Condensed_46340.ttf);
+}
+
+/* Bold Font */
+@font-face {
+     font-family: UniversLdStdBold;
+     src: url(Fonts/Univers-LT-Std-67-Bold-Condensed_46347.ttf);
+}
+
+body {
+     margin: 0;
+}
+
+h1 {
+     font-family: UniversLdStd, Arial;
+     color: white;
+     font-size: 60px;
+     font-weight: 100;
+     text-align: center;
+     margin: 20px 0px;
+}
+
+h2 {
+     font-family: UniversLdStd, Arial;
+     color: rgb(0, 31, 91);
+     font-size: 37px;
+     font-weight: 100;
+     text-transform: uppercase;
+     margin: 0;
+}
+
+h3 {
+     font-family: UniversLdStdLight, Arial;
+     font-weight: 100;
+     letter-spacing: 1.5px;
+     color: white;
+     margin: 0;
+     text-align: center;
+}
+
+p {
+     font-family: UniversLdStdLight, Arial;
+     font-weight: 500;
+     color: #9B9A9A;
+     margin-top: 20px;
+     letter-spacing: 1px;
+     line-height: 1.5;
+}
+
+ol {
+     font-family: UniversLdStdLight, Arial;
+     font-weight: 500;
+     color: rgb(114, 170, 190);
+     letter-spacing: 1px;
+     line-height: 3;
+}
+
+ul {
+     font-family: UniversLdStdLight, Arial;
+     font-weight: 500;
+     color: rgb(114, 170, 190);
+     letter-spacing: 1px;
+     line-height: 3;
+} 
+
+hr {
+     border: 1px solid rgb(242, 101, 52);
+}
+
+strong {
+     font-family: UniversLdStdBold, Arial;
+     font-weight: 100;
+}
+
+footer {
+     height: 230px;
+     width: 100%;
+     background-color: #122953;
+     margin-top: 20vh;
+}
+
+
+.introduction {
+     height: 100vh;
+}
+
+.backDrop {
+     position: fixed;
+     z-index: -1;
+     background-image: url('Images/SMU_Skyline.png');
+     background-size: cover;
+     background-position-y: 10%;
+     background-position-x: 50%;
+     width: 100%;
+     height: 100vh;
+}
+
+.navigationBar {
+     width: 100%;
+     padding-top: 20px;
+}
+
+.navigationBarColor {
+     width: 100%;
+     padding-top: 20px;
+     padding-bottom: 15px;
+     background-color: #122953;
+}
+
+.logoNavBar {
+     padding-left: 40px;
+}
+
+#logo {
+     height: 40px;
+}
+
+.menuNavBar {
+     float: right;
+     padding-right: 40px;
+     font-size: 0px;
+}
+
+.menuNavBar div {
+     width: 100px;
+     height: 30px;
+     margin-top: 5px;
+     display: inline-block;
+     text-align: center;
+}
+
+.menuNavBar h3 {
+     color: white;
+     font-size: 17px;
+     margin: 8px 0px 0px 0px;
+     text-transform: uppercase;
+}
+
+.menuDrop {
+     cursor: default;
+}
+
+.menuDrop h3:hover {
+     text-decoration: none;
+}
+
+#aboutDrop {
+     right: 200px;
+}
+
+#teamDrop {
+     right: 200px;
+}
+
+#joinDrop {
+     right: 200px;
+}
+
+.dropDown {
+     position: absolute;
+     font-size: 0px;
+     display: none;
+     top: 25px;
+}
+
+.dropDown:hover {
+     opacity: 1;
+     display: block;
+}
+
+.dropDown a {
+     text-decoration: none;
+}
+
+.dropDown div {
+     background-color: rgba(0, 0, 0, 0);
+}
+
+.dropDown a>div {
+     background-color: white;
+     width: 100px;
+     height: 30px;
+     padding-top: 5px;
+     text-align: center;
+     display: block;
+     margin: 0;
+}
+
+#color .dropDown a>div{
+     background-color: #122953;
+}
+
+.dropDown h3 {
+     color: rgb(99, 116, 123);
+     font-size: 17px;
+     margin: 8px 0px 0px 0px;
+     text-transform: uppercase;
+}
+
+#color .dropDown h3{
+     color: white;
+}
+
+#blog h3:hover, #signIn h3:hover, .dropDown h3:hover {
+     text-decoration: underline;
+}
+
+.introMessage {
+     max-width: 900px;
+     position: absolute;
+     margin: 0px -450px;
+     left: 50%;
+     right: 50%;
+     top: 37%;
+}
+
+#welcome {
+     opacity: 0;
+}
+
+#mission {
+     font-family: UniversLdStdLight, Arial;
+     font-size: 25px;
+     opacity: 0;
+}
+
+.coreValues {
+     height: 150px;
+     width: 750px;
+     background-color: white;
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     margin-bottom: -100px;
+     margin-left: -375px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 0px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.coreValuesContent {
+     max-width: 616px;
+     margin: auto;
+}
+
+.coreItem {
+     width: 100px;
+     font-size: 12px;
+     display: inline-block;
+     padding: 22px 10px 0px 10px;
+     opacity: 0;
+}
+
+.icon {
+     max-width: 70px;
+     margin: auto;
+}
+
+.main {
+     background-color: white;
+     width: 100%;
+     min-height: 100vh;
+     padding-top: 100px;
+}
+
+.container {
+     padding-top: 25vh;
+     margin: auto;
+     max-width: 1000px;
+}
+
+.short-top {
+     padding-top: 5vh;
+}
+
+.container > div{
+     display: inline-block;
+}
+
+.leftContainer {
+     float: left;
+}
+
+.rightContainer {
+     float: right;
+}
+
+.containerLarge {
+     width: 60%;
+     display: inline-block;
+}
+
+.containerSmall {
+     width: 35%;
+     display: inline-block;
+}
+
+.heading {
+     width: 400px;
+}
+
+.orangeDivider {
+     width: 0px;
+     height: 2px;
+     background-color: rgb(242, 101, 52);
+}
+
+.buttonContainer {
+     width: 170px;
+     margin: auto;
+     margin-top: 40px;
+     height: 30px;
+}
+
+.buttonLink {
+     text-decoration: none;
+     height: 100%;
+}
+
+.button {
+     border: 2px solid rgb(0, 31, 91);
+     border-radius: 3px;
+     height: 100%;
+     transition: background-color .3s;
+     color: rgb(0, 31, 91);
+}
+
+.button h3 {
+     color: inherit;
+     font-family: UniversLdStdBold, Arial;
+     text-align: center;
+     font-size: 13px;
+     letter-spacing: 3px;
+     text-transform: uppercase;
+     padding-top: 9px;
+     transition: color .3s;
+}
+
+.button:hover {
+     background-color: rgb(0, 31, 91);
+     color: white;
+}
+
+.logos {
+     width: 100%;
+     padding: 50px 0px;
+}
+
+.logos img {
+     max-width: 200px;
+     float: right;
+     padding: 15px 0px;
+     opacity: 0;
+}
+
+.eventSmall {
+     display: inline-block;
+     padding-right: 20px;
+}
+
+.eventSmall hr {
+     width: 0%;
+     margin-top: 12px;
+}
+
+.eventSmall img {
+     width: 150px;
+     height: 200px;
+     object-fit: cover;
+     overflow: hidden;
+}
+
+.eventSmall h3 {
+     color: rgb(0, 31, 91);
+     padding-top: 3px;
+     line-height: 1.5;
+     font-size: 15px;
+     text-transform: uppercase;
+}
+
+.calendar {
+     background-color: lightgray;
+     width: 390px;
+     height: 270px;
+}
+
+.joinSteps {
+     float: left;
+     padding-top: 85px;
+}
+
+.joinSteps li {
+     opacity: 0%;
+}
+
+#joinSection .containerLarge {
+     padding-left: 41px;
+}
+
+.gallery {
+     padding-top: 25vh;
+     width: 100%;
+     height: 50vh;
+}
+
+.gallery table {
+     width: 100%;
+     height: 100%;
+     background-color: white;
+     border-collapse: collapse;
+}
+
+.gallery td {
+     font-size: 30px;
+     color: white;
+     background-size: cover;
+     background-position-x: 50%;
+}
+
+#galleryLeft {
+     width: 30%;
+     background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(Images/Amazon.jpg);
+     padding-left: 30px;
+}
+
+#galleryMiddle {
+     width: 40%;
+     background-image: url(Images/LunchLearn2.png);
+}
+
+#galleryRight {
+     width: 30%;
+     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(Images/GBM2.jpg);
+     text-align: right;
+     padding-right: 30px;
+}
+
+#quote {
+     float: left;
+     padding-right: 41px;
+}
+
+#quote div {
+     padding-top: 55px;
+     width: 80%;
+}
+
+#quote p {
+     color: rgb(114, 170, 190);
+     line-height: 2;
+     opacity: 0;
+}
+
+.footerContent {
+     max-width: 800px;
+     padding-top: 5vh;
+     margin: auto;
+}
+
+.footerContent h3 {
+     font-size: 15px;
+     text-align: left;
+}
+
+.footerContent a {
+     color: white;
+     text-decoration: none;
+}
+
+.footerLogo {
+     width: 50%;
+     display: inline-block;
+     float: left;
+}
+
+#shpeSmuLogo {
+     max-width: 350px;
+     padding-top: 20px;
+     padding-bottom: 30px;
+}
+
+.footerLinks {
+     width: 50%;
+     display: inline-block;
+}
+
+.footerLinks ul {
+     list-style: none;
+     color: white;
+     line-height: 1.5;
+     font-size: 15px;
+}
+
+.footerLinks a {
+     text-decoration: none;
+     color: white;
+}
+
+.columns {
+     max-width: 150px;
+     display: inline-block;
+     padding-right: 40px;
+     float: left;
+}
+
+.columns h3 {
+     font-family: UniversLdStdBold, Arial;
+     text-align: left;
+     text-transform: uppercase;
+}
+
+.pageTitle {
+
+}
+
+.officerInfo {
+     max-width: 287px;
+     margin: auto;
+     text-align: center;
+}
+
+.offierInfo p {
+     font-family: UniversLdStdLight, Arial;
+     font-weight: 500;
+     color: rgb(114, 170, 190);
+     letter-spacing: 1px;
+     line-height: 3;
+     margin: 10px 0px 10px 0px;
+}
+
+.officerPhoto {
+     width: 100%;
+     height: 200px;
+     background-size: cover;
+     background-position-x: 50%;
+     border-radius: 50%;
+}
+
+.Email {
+     text-decoration: none;
+}
+
+.compress {
+     max-width: 200px;
+     margin: auto;
+}
+
+#history {
+     max-width: 50%;
+     margin: auto;
+}
+
+.center-image {
+     width: auto;
+     padding: 7rem;
+     height: 400px;
+}
